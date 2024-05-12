@@ -3,6 +3,8 @@ import { useState } from "react";
 
 import Country from "../Country/Country";
 
+import './Countries.css'
+
 
 
 
@@ -23,7 +25,7 @@ const Countries = () => {
     return (
         <div>
             <h4>Total Countries : {countries.length}</h4>
-            <div >
+            <div className="countriesDiv">
             {
                 countries.map(country => <Country key={country.ccn3} country={country}></Country>)
             }    
